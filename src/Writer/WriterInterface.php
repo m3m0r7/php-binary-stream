@@ -4,6 +4,8 @@ namespace PHPBinaryStream\Writer;
 
 interface WriterInterface
 {
+    public static function factory($handle, array $options = []);
+
     public function writeChar(string $char): self;
     public function writeBoolean(bool $boolean): self;
 

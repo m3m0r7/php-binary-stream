@@ -4,6 +4,8 @@ namespace PHPBinaryStream\Reader;
 
 interface ReaderInterface
 {
+    public static function factory($handle, array $options = []);
+
     public function readChar(): string;
     public function readBoolean(): bool;
 
